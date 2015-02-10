@@ -297,6 +297,12 @@ NSString *const kFRDLivelyButtonStyleChangeAnimationDuration = @"kFRDLivelyButto
         newLine3Path = [self createLineFromPoint:CGPointMake(self.dimension, self.dimension/2.0f)
                                          toPoint:CGPointMake(self.dimension - self.dimension/2.0f/GOLDEN_RATIO, self.dimension/2-self.dimension/2.0f/GOLDEN_RATIO)];
         
+    } else if (style == kFRDLivelyButtonStyleSearch) {
+        newCirclePath = [self createCenteredCircleWithRadius:self.dimension/2.0f];
+        newCircleAlpha = 1.0f;
+        newLine3Path = [self createLineFromPoint:CGPointMake(self.dimension*0.82f, self.dimension*0.82f)
+                                         toPoint:CGPointMake(self.dimension*1.15f, self.dimension*1.15f)];
+        
     } else {
         NSAssert(FALSE, @"unknown type");
     }
