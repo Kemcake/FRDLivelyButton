@@ -20,7 +20,8 @@ typedef enum {
     kFRDLivelyButtonStyleCaretLeft,
     kFRDLivelyButtonStyleCaretRight,
     kFRDLivelyButtonStyleArrowLeft,
-    kFRDLivelyButtonStyleArrowRight
+    kFRDLivelyButtonStyleArrowRight,
+    kFRDLivelyButtonStyleSearch
 } kFRDLivelyButtonStyle;
 
 @interface FRDLivelyButton : UIButton
